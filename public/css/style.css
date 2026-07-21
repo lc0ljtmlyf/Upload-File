@@ -1,0 +1,29 @@
+:root { --primary: #007bff; --success: #28a745; --danger: #dc3545; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f8f9fa; color: #333; }
+.hero-section { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 80px 0; text-align: right; }
+.hero-section h1 { font-size: 3.5rem; margin-bottom: 20px; font-weight: 700; }
+.hero-section .lead { font-size: 1.3rem; margin-bottom: 30px; opacity: 0.9; }
+.features-section { background: white; }
+.feature-card { background: #f8f9fa; border-radius: 10px; transition: all 0.3s ease; border: 1px solid #e9ecef; }
+.feature-card:hover { transform: translateY(-10px); box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); }
+.upload-area { border: 3px dashed #007bff; border-radius: 10px; padding: 40px 20px; text-align: center; cursor: pointer; transition: all 0.3s ease; background: #f8f9fa; }
+.upload-area:hover, .upload-area.dragover { background: #e7f1ff; border-color: #0056b3; transform: scale(1.02); }
+.upload-area i { color: #007bff; }
+.file-card { border: 1px solid #e9ecef; border-radius: 8px; padding: 15px; background: white; transition: all 0.3s ease; }
+.file-card:hover { box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); }
+.file-card .file-name { font-weight: 600; color: #333; margin-bottom: 8px; word-break: break-word; }
+.file-card .file-info { display: flex; justify-content: space-between; font-size: 0.85rem; color: #6c757d; margin-bottom: 10px; }
+.file-card .file-actions { display: flex; gap: 8px; }
+.file-card .file-actions button { padding: 5px 12px; font-size: 0.85rem; }
+.btn-download { background: #28a745; color: white; border: none; transition: all 0.3s ease; }
+.btn-download:hover { background: #218838; transform: scale(1.05); }
+.btn-delete { background: #dc3545; color: white; border: none; transition: all 0.3s ease; }
+.btn-delete:hover { background: #c82333; transform: scale(1.05); }
+.progress-bar { background: linear-gradient(90deg, #667eea, #764ba2); }
+.card { border: none; }
+.card-header { border-bottom: 2px solid rgba(0, 0, 0, 0.1); }
+.navbar { box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); }
+.min-vh-100 { min-height: 100vh; }
+footer { border-top: 1px solid #e9ecef; }
+@media (max-width: 768px) { .hero-section h1 { font-size: 2rem; } .hero-section .lead { font-size: 1rem; } .upload-area { padding: 30px 15px; } }
